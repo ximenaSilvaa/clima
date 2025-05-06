@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route, useNavigate } from 'react-router-dom'
+import './index.css'
+import Home from './home'
+import Grupos from './grupos'
 
 function App() {
   return (
-    <>
-      <h1 className='font-bold '>Hola putos</h1>
-      <button className='bg-black text-cyan-300'>Push me</button>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="hola" element={<Grupos />} />
+    </Routes>
   )
 }
 
