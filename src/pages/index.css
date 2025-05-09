@@ -4,6 +4,17 @@ html, body, #root {
   height: 100%;
 }
 
+
 @theme {
-  --color-primary: #1e40af; /* azul fuerte */
+  --color-primary: #195A86; /* azul fuerte */
+  --azul: #195A86;
+  --azul4: #8FC9E1;
+  --gris: #E7E7E7;
+  --azul2: #28574E;
+  --azul5: #009BDD;
+  --gris2: #B3B3B3;
+  --azul3: #2AB5EC;
+  --morado: #865ea6;
+  --gris3: #383838;
+  
 }
