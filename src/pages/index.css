@@ -5,6 +5,7 @@ html, body, #root {
 }
 
 @theme {
+    --color-primary: #195A86; 
     --azul: #195A86;
     --azul4: #8FC9E1;
     --gris: #E7E7E7;
@@ -14,5 +15,6 @@ html, body, #root {
     --azul3: #2AB5EC;
     --morado: #865ea6;
     --gris3: #383838;
+    --azul6: #80808050;
   
 }
