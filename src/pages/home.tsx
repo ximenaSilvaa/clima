@@ -1,33 +1,21 @@
 import { useNavigate, } from 'react-router-dom'
-import GroupCard from '../componentes/GroupCard'
 
 function Home() {
     const navigate = useNavigate()
 
     return (
-        <div className="h-auto w-auto bg-primary flex flex-col">
-            {/* header */}
-            <header className="relative p-4 flex items-center justify-center gap-10">
-                <h2 className="text-white text-lg font-semibold">Hola centrado</h2>
-                <h2 className="text-white text-lg font-semibold">Hola derecha</h2>
-            </header>
-
-            <div className='text-center mt-20 mb-20'>
-                <h2 className="text-white text-4xl font-bold">Grupos </h2>
-            </div>
-
-            {/* contenido centrado */}
-            <div className="flex flex-col items-center justify-start min-h-screen w-full py-10 px-20">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 px-4 w-full">
-                    <GroupCard />
-                    <GroupCard />
-                    <GroupCard />
-                    <GroupCard />
-                    <GroupCard />
+        <div className='h-screen bg-primary'>
+            <div className="flex items-center justify-center py-10">
+                <div className="text-center">
+                    <h1 className="font-bold text-2xl mb-4 text-white">Cara de Bola</h1>
+                    <button 
+                        className="bg-white text-cyan-600 border border-cyan-400 px-4 py-2 rounded hover:bg-gray-100 transition"
+                        onClick={() => navigate('/hola')}
+                    >
+                        Editar
+                    </button>
                 </div>
             </div>
-
-
         </div>
     )
 }
