@@ -33,7 +33,7 @@ function Login() {
                     </div>
                     <button
                         className="bg-white text-[var(--azul)] font-bold text-lg px-8 py-2 rounded-full border border-gray-300 hover:bg-[#cde0f4]"
-                        onClick={() => navigate('/alumno')}
+                        onClick={() => navigate('/grupos')}
                     >
                         Ingresar
                     </button>
