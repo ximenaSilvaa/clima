@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useNavigate, } from 'react-router-dom'
 import GroupCard from '../componentes/GroupCard';
 import Header from '../componentes/Header';
-
 function Grupos() {
     const navigate = useNavigate()
 
