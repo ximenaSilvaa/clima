@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 function Grupos() {
     return (
         <div className='h-screen bg-primary'>
