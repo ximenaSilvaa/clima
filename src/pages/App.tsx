@@ -1,6 +1,5 @@
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './index.css'
-import Home from './home'
 import Grupos from './grupos'
 import Grupo from './grupo'
 import Bienvenida from './bienvenida'
