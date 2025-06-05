@@ -1,9 +1,11 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
+import { StudentInformation } from '../types/types';
 
-function StudentCard() {
-    const navigate = useNavigate()
+interface StudentCardProps {
+    student: StudentInformation;
+}
+
+function StudentCard({student}:StudentCardProps) {
 
     return (
         <Link to="/Alumno" className="no-underline">
@@ -11,13 +13,13 @@ function StudentCard() {
                 {/* Header */}
                 <div className="flex flex-row items-center gap-3 p-4">
                     <img 
-                        src="https://www.primeraedicion.com.ar/wp-content/uploads/2025/04/tralalero.jpg" 
+                        src={student.profilePhoto}
                         alt="Avatar" 
                         className="w-14 h-14 rounded-full object-cover"
                     />
                     <div>
-                        <div className='text-lg font-semibold'>Tralalero Tralala</div>
-                        <div className='text-sm text-gray-600'>Il meo futurio</div>
+                        <div className='text-lg font-semibold'>{student.studentName}</div>
+                        <div className='text-sm text-gray-600'>{student.lista}</div>
                     </div>
                 </div>
             </div>
