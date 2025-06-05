@@ -42,7 +42,7 @@ function GroupCard({ group }: GroupCardProps) {
                 <div className='flex justify-end gap-2 mt-4'>
                     <button 
                         className="bg-white text-cyan-600 border border-cyan-400 px-4 py-2 rounded hover:bg-gray-100 transition"
-                        onClick={() => navigate('/grupo')}
+                        onClick={() => navigate('/grupo', { state: { students: group.students } })}
                     >
                         Visualizar
                     </button>
