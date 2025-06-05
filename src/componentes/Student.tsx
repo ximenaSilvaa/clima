@@ -8,7 +8,7 @@ interface StudentCardProps {
 function StudentCard({student}:StudentCardProps) {
 
     return (
-        <Link to="/Alumno" className="no-underline">
+        <Link to="/Alumno" state={{ student }} className="no-underline">
             <div className='flex flex-col bg-white rounded-xl text-gray-950 shadow-md overflow-hidden min-w-[360px] h-auto'>
                 {/* Header */}
                 <div className="flex flex-row items-center gap-3 p-4">
