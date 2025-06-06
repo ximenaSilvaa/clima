@@ -6,6 +6,7 @@ import {
   PlusCircleIcon,
   PencilSquareIcon,
 } from '@heroicons/react/24/solid';
+import Navbar from '../componentes/Navbar';
 
 function Alumno() {
   const [activeFolder, setActiveFolder] = useState<string | null>(null);
@@ -13,11 +14,12 @@ function Alumno() {
   const folders = ['Reportes', 'PEI', 'Expediente', 'Pagos'];
 
   return (
+
+
     <div className="min-h-screen bg-[#135078] text-white font-sans w-full overflow-x-hidden relative">
-
       {/* Barra de navegación - más alta */}
-      <div className="w-full h-20 bg-gray-200" />
-
+      <Navbar />
+      
       <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-20 py-12">
 
         {/* Título */}

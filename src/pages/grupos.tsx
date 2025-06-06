@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { useNavigate, } from 'react-router-dom'
 import GroupCard from '../componentes/GroupCard';
-import Header from '../componentes/Header';
+import Navbar from '../componentes/Navbar';
+
 function Grupos() {
     const navigate = useNavigate()
 
     return (
         <div className="h-auto w-auto bg-primary flex flex-col">
             {/* header */}
-            <Header />
+            <Navbar/>
+            
 
             <div className='text-center mt-20 mb-20'>
                 <h2 className="text-white text-4xl font-bold">Grupos </h2>
